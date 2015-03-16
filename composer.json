@@ -22,5 +22,5 @@
       "Foued\\RecaptchaBundle": ""
     }
   },
-  "target-dir": "Foued\\RecaptchaBundle"
+  "target-dir": "Foued/RecaptchaBundle"
 }
