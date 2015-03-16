@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <service id="recaptcha.verifier" class="ReCaptcha\ReCaptcha">
+            <argument>%recaptcha.secret%</argument>
+            <argument type="service" id="recaptcha_bundle.postrequest"/>
+        </service>
+
+        <service id="recaptcha_bundle.postrequest" class="Foued\Bundle\recaptchaBundle\ReCaptcha\RequestMethod\Post">
+            <argument>%recaptcha.proxy%</argument>
+        </service>
+
+        <service id="recaptcha_bundle.constraint.recaptcha" class="Foued\Bundle\recaptchaBundle\Validator\Constraints\Recaptcha"></service>
+
+        <service id="recaptcha_bundle.validator" class="Foued\Bundle\recaptchaBundle\Validator\Constraints\RecaptchaValidator">
+            <argument type="service" id="recaptcha.verifier"/>
+            <tag name="validator.constraint_validator" alias="alias_name" />
+        </service>
+
+        <service id="recaptcha_bundle.form.type.recaptcha" class="Foued\Bundle\recaptchaBundle\Form\Type\RecaptchaType">
+            <argument type="service" id="recaptcha.event.listner" ></argument>
+            <argument>%recaptcha.site_key%</argument>
+            <tag name="form.type" alias="recaptcha" />
+        </service>
+
+        <service id="recaptcha.event.listner" class="Foued\Bundle\recaptchaBundle\EventListener\RecaptchaListener">
+            <argument type="service" id="recaptcha_bundle.validator" />
+            <argument type="service" id="recaptcha_bundle.constraint.recaptcha"/>
+        </service>
+
+    </services>
+</container>
