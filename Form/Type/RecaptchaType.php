@@ -62,6 +62,7 @@ class RecaptchaType extends AbstractType
     {
         $resolver->setDefaults(array(
             "label" => false,
+            "mapped" => false,
             'site_key' => ""
         ));
     }
