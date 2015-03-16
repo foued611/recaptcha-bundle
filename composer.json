@@ -19,8 +19,8 @@
   },
   "autoload": {
     "psr-0": {
-      "Foued\\RecaptchaBundle": ""
+      "Foued\\Bundle\\RecaptchaBundle": ""
     }
   },
-  "target-dir": "Foued/RecaptchaBundle"
+  "target-dir": "Foued/Bundle/RecaptchaBundle"
 }
