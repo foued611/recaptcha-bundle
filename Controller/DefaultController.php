@@ -12,7 +12,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $form = $this->createCform();
-        return $this->render('FouedrecaptchaBundle:Default:index.html.twig', array('form' => $form->createView()));
+        return $this->render('FouedRecaptchaBundle:Default:index.html.twig', array('form' => $form->createView()));
     }
     public function handlerAction(Request $request){
         $form = $this->createCform();

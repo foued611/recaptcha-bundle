@@ -4,6 +4,6 @@ namespace Foued\Bundle\recaptchaBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class FouedrecaptchaBundle extends Bundle
+class FouedRecaptchaBundle extends Bundle
 {
 }

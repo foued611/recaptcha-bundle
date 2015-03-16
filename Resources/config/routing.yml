@@ -1,6 +1,6 @@
 fouedrecaptcha_homepage:
     path:     /
-    defaults: { _controller: FouedrecaptchaBundle:Default:index }
+    defaults: { _controller: FouedRecaptchaBundle:Default:index }
 form_submit:
     path:     /handler
-    defaults: { _controller: FouedrecaptchaBundle:Default:handler }
+    defaults: { _controller: FouedRecaptchaBundle:Default:handler }
