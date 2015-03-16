@@ -31,7 +31,7 @@ class FouedRecaptchaExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
         $twigResources = $container->getParameter('twig.form.resources');
-        $container->setParameter('twig.form.resources', array_merge(array('FouedRecaptchaBundle::Form::recaptcha.html.twig'), $twigResources));
+        $container->setParameter('twig.form.resources', array_merge(array('FouedRecaptchaBundle::Form/recaptcha.html.twig'), $twigResources));
 
 
         $container->setParameter('recaptcha.site_key', $config['site_key']);
