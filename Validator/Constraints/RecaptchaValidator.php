@@ -1,13 +1,13 @@
 <?php
 /**
  * Class RecaptchaValidator
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * RecaptchaValidator.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\Validator\Constraints;
+namespace Foued\Bundle\RecaptchaBundle\Validator\Constraints;
 
 use ReCaptcha\ReCaptcha;
 use Symfony\Component\Validator\Constraint;

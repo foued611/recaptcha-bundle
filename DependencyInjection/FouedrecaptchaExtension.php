@@ -1,13 +1,13 @@
 <?php
 /**
  * Class FouedrecaptchaExtension
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * FouedrecaptchaExtension.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\DependencyInjection;
+namespace Foued\Bundle\RecaptchaBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

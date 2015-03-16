@@ -2,16 +2,16 @@
 /**
  * Class RecaptchaType
  *
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * RecaptchaType.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\Form\Type;
+namespace Foued\Bundle\RecaptchaBundle\Form\Type;
 
-use Foued\Bundle\recaptchaBundle\EventListener\RecaptchaListener;
-use Foued\Bundle\recaptchaBundle\Validator\Constraints\RecaptchaValidator;
+use Foued\Bundle\RecaptchaBundle\EventListener\RecaptchaListener;
+use Foued\Bundle\RecaptchaBundle\Validator\Constraints\RecaptchaValidator;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Form\FormInterface;

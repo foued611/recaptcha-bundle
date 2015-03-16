@@ -1,15 +1,15 @@
 <?php
 /**
  * Class RecaptchaListener
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * RecaptchaListener.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\EventListener;
+namespace Foued\Bundle\RecaptchaBundle\EventListener;
 
-use Foued\Bundle\recaptchaBundle\Validator\Constraints\RecaptchaValidator;
+use Foued\Bundle\RecaptchaBundle\Validator\Constraints\RecaptchaValidator;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormEvent;

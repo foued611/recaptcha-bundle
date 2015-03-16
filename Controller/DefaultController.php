@@ -1,8 +1,8 @@
 <?php
 
-namespace Foued\Bundle\recaptchaBundle\Controller;
+namespace Foued\Bundle\RecaptchaBundle\Controller;
 
-use Foued\Bundle\recaptchaBundle\Form\TestType;
+use Foued\Bundle\RecaptchaBundle\Form\TestType;
 use ReCaptcha\ReCaptcha;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

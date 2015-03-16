@@ -1,6 +1,6 @@
 <?php
 
-namespace Foued\Bundle\recaptchaBundle;
+namespace Foued\Bundle\RecaptchaBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

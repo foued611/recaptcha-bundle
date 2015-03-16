@@ -9,24 +9,24 @@
             <argument type="service" id="recaptcha_bundle.postrequest"/>
         </service>
 
-        <service id="recaptcha_bundle.postrequest" class="Foued\Bundle\recaptchaBundle\ReCaptcha\RequestMethod\Post">
+        <service id="recaptcha_bundle.postrequest" class="Foued\Bundle\RecaptchaBundle\ReCaptcha\RequestMethod\Post">
             <argument>%recaptcha.proxy%</argument>
         </service>
 
-        <service id="recaptcha_bundle.constraint.recaptcha" class="Foued\Bundle\recaptchaBundle\Validator\Constraints\Recaptcha"></service>
+        <service id="recaptcha_bundle.constraint.recaptcha" class="Foued\Bundle\RecaptchaBundle\Validator\Constraints\Recaptcha"></service>
 
-        <service id="recaptcha_bundle.validator" class="Foued\Bundle\recaptchaBundle\Validator\Constraints\RecaptchaValidator">
+        <service id="recaptcha_bundle.validator" class="Foued\Bundle\RecaptchaBundle\Validator\Constraints\RecaptchaValidator">
             <argument type="service" id="recaptcha.verifier"/>
             <tag name="validator.constraint_validator" alias="alias_name" />
         </service>
 
-        <service id="recaptcha_bundle.form.type.recaptcha" class="Foued\Bundle\recaptchaBundle\Form\Type\RecaptchaType">
+        <service id="recaptcha_bundle.form.type.recaptcha" class="Foued\Bundle\RecaptchaBundle\Form\Type\RecaptchaType">
             <argument type="service" id="recaptcha.event.listner" ></argument>
             <argument>%recaptcha.site_key%</argument>
             <tag name="form.type" alias="recaptcha" />
         </service>
 
-        <service id="recaptcha.event.listner" class="Foued\Bundle\recaptchaBundle\EventListener\RecaptchaListener">
+        <service id="recaptcha.event.listner" class="Foued\Bundle\RecaptchaBundle\EventListener\RecaptchaListener">
             <argument type="service" id="recaptcha_bundle.validator" />
             <argument type="service" id="recaptcha_bundle.constraint.recaptcha"/>
         </service>

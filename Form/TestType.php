@@ -1,15 +1,15 @@
 <?php
 /**
  * Class TestType
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * TestType.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\Form;
+namespace Foued\Bundle\RecaptchaBundle\Form;
 
-use Foued\Bundle\recaptchaBundle\Form\Type\RecaptchaType;
+use Foued\Bundle\RecaptchaBundle\Form\Type\RecaptchaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;

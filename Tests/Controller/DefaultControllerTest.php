@@ -1,6 +1,6 @@
 <?php
 
-namespace Foued\Bundle\recaptchaBundle\Tests\Controller;
+namespace Foued\Bundle\RecaptchaBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

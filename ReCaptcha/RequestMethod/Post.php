@@ -2,13 +2,13 @@
 /**
  * Class Post
  *
- * @package Foued\Bundle\recaptchaBundle
+ * @package Foued\Bundle\RecaptchaBundle
  *
  * Post.php
  *
  * @autor   : Foued Dghaies <foued@dghaies.de>
  */
-namespace Foued\Bundle\recaptchaBundle\ReCaptcha\RequestMethod;
+namespace Foued\Bundle\RecaptchaBundle\ReCaptcha\RequestMethod;
 
 use ReCaptcha\RequestMethod;
 use ReCaptcha\RequestParameters;
